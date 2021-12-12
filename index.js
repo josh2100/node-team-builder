@@ -5,31 +5,58 @@ const writeFile = require("./utils/generate-site");
 
 // Node modules
 const inquirer = require("inquirer");
-// const jest require jestn
+const jest = require("jest");
+
+const Employee = require("./lib/Employee");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+
+let teamMembers = [];
+
+//THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
 
 const promptTeam = () => {
   return inquirer.prompt([
     {
       type: "input",
-      name: "name",
-      message: "What is your team name?",
-      validate: (nameInput) => {
-        if (nameInput) {
+      name: "managerName",
+      message: "What is the name of your team Manager?",
+      validate: (managerInput) => {
+        if (managerInput) {
           return true;
         } else {
-          console.log("Please enter your team name!");
+          console.log("Please enter your team Manager name!");
+          return false;
+        }
+      },
+    },
+
+    {
+      type: "input",
+      name: "managerId",
+      message: "What is the EMPLOYEE ID of your team Manager?",
+      validate: (employeeIdInput) => {
+        if (employeeIdInput) {
+          return true;
+        } else {
+          console.log("Please enter your team Manager employee ID!");
           return false;
         }
       },
     },
   ]);
+  // after asking questions, package up manager data as an employee
+  // manager extends employee
+  // and pushes it into teamMembers[];
+  //.then(new manager stuff)
 };
 
 const promptTeamMember = (teamData) => {
   // If there's no 'team members' array property, create one
-  if (!teamData.members) {
-    teamData.members = [];
-  }
+  //   if (!teamData.members) {
+  //     teamData.members = [];
+  //   }
 
   console.log(`
   =================
@@ -86,4 +113,8 @@ const promptTeamMember = (teamData) => {
     });
 };
 
-promptTeam().then(promptTeamMember);
+promptTeam()
+  .then(promptTeamMember)
+  .then((teamData) => {
+    console.log(teamData);
+  });
