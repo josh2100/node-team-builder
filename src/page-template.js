@@ -28,7 +28,7 @@ const pageTemplate = (team) => {
               <li class="list-group-item">
                 Email Address: ${element.email}
               </li>
-              <li class="list-group-item">Office Phone: 555-321-8008</li>
+              <li class="list-group-item">Office Phone???</li>
             </ul>
           </div>
         </div>
@@ -71,7 +71,7 @@ const pageTemplate = (team) => {
               <li class="list-group-item">
                 Email: ${team[0].email}
               </li>
-              <li class="list-group-item">Office Phone: 555-321-8008</li>
+              <li class="list-group-item">Office number: ${team[0].officeNumber}</li>
             </ul>
           </div>
         </div>
