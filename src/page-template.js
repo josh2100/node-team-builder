@@ -15,8 +15,15 @@ const pageTemplate = (team) => {
 
   teamMembers.forEach((element) => {
     // make if statement to change card based on intern or engineer
-    // .join to eliminate commas
-    // Add a card for each member
+
+    const engineerOrIntern = () => {
+      if (element.role === "Engineer") {
+        return `Github: ${element.github}`; // line
+      } else {
+        return `School: ${element.school}`; //return intern //line
+      }
+    };
+
     teamHtml.push(`
 
             <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -28,7 +35,7 @@ const pageTemplate = (team) => {
               <li class="list-group-item">
                 Email Address: ${element.email}
               </li>
-              <li class="list-group-item">Office Phone???</li>
+              <li class="list-group-item">${engineerOrIntern()}</li>
             </ul>
           </div>
         </div>
@@ -71,12 +78,14 @@ const pageTemplate = (team) => {
               <li class="list-group-item">
                 Email: ${team[0].email}
               </li>
-              <li class="list-group-item">Office number: ${team[0].officeNumber}</li>
+              <li class="list-group-item">Office number: ${
+                team[0].officeNumber
+              }</li>
             </ul>
           </div>
         </div>
         <!-- Others -->
-${teamHtml}
+${teamHtml.join("")}
         <!-- end row -->
       </section>
     </main>
@@ -85,6 +94,7 @@ ${teamHtml}
   
   `;
 };
+
 // header
 // manager
 `
@@ -93,13 +103,13 @@ html is fun
 `;
 
 //
-const generateTeamPage = (aboutText) => {
-  return `html header`;
-};
+// const generateTeamPage = (aboutText) => {
+//   return `html header`;
+// };
 
-const generateTeamMembers = (projectsArr) => {
-  // use forEach to make a section for each team member
-  return `a`;
-};
+// const generateTeamMembers = (projectsArr) => {
+//   // use forEach to make a section for each team member
+//   return `a`;
+// };
 
 module.exports = pageTemplate;
