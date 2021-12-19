@@ -14,7 +14,7 @@ This is a node project in which a user can dynamically generate an HTML file fro
 - [Usage](#usage)
 - [License](#license)
 - [Contributions](#contributions)
-- [Technologies Used](#technologiesused)
+- [Technologies](#technologies)
 - [Credits](#credits)
 - [Questions](#questions)
 
