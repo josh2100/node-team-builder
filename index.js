@@ -1,13 +1,10 @@
-// look at app.js in generate portfolio for reference
-// my stuff
-const generateTeamPage = require("./src/page-template");
+// const generateTeamPage = require("./src/page-template"); deprecated??!
 const writeFile = require("./utils/generate-site");
 
 // Node modules
 const inquirer = require("inquirer");
 const jest = require("jest");
 
-// const Employee = require("./lib/Employee");  not necessary for this page?
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -84,10 +81,6 @@ const newManager = () => {
       teamMembers.push(manager);
       promptTeamMember();
     });
-  // after asking questions, package up manager data as an employee
-  // manager extends employee
-  // and pushes it into teamMembers[];
-  //.then(new manager stuff)
 };
 
 const promptTeamMember = () => {

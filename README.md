@@ -1,6 +1,6 @@
 # Node Team Builder
 
-This Node.js command line application takes details about a software engineering team and generates a webpage for it.
+This Node.js command line application asks details about a software engineering team and generates a webpage for it. Clickable links are made for email addresses and GitHub portfolios
 
 Demo video at (link here)
 
@@ -14,12 +14,13 @@ This is a node project in which a user can dynamically generate an HTML file fro
 - [Usage](#usage)
 - [License](#license)
 - [Contributions](#contributions)
+- [Technologies Used](#technologiesused)
 - [Credits](#credits)
 - [Questions](#questions)
 
 ## Installation
 
-Use npm install to install inquirer, jest and associated modules, which are required for this application.
+Use npm install to install inquirer, jest, and associated modules, which are required for this application.
 
 ## Usage
 
@@ -36,6 +37,10 @@ This project is licensed under the MIT license.
 ## Contributions
 
 Fork the project and create a pull request. Let me know how you think you can contribute and we will talk.
+
+## Technologies Used
+
+Node.js, Inquirer.js, Jest, Bootstrap
 
 ## Credits
 

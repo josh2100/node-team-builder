@@ -56,7 +56,7 @@ const pageTemplate = (team) => {
   </head>
   <body>
     <!-- Header -->
-    <header class="text-center">
+    <header class="text-center bg-primary">
       <h1 class="">Software Team Profile</h1>
     </header>
 
@@ -73,7 +73,7 @@ const pageTemplate = (team) => {
               <li class="list-group-item">
                 <a href="mailto:${team[0].email}">Email: ${team[0].email}</a>
               </li>
-              <li class="list-group-item">Office number: ${
+              <li class="list-group-item">Office Number: ${
                 team[0].officeNumber
               }</li>
             </ul>

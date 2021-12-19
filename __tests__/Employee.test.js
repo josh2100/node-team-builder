@@ -6,7 +6,7 @@ test("creates employee object", () => {
 });
 
 test("creates employee with employee role", () => {
-  const employee = new Employee("Jim");
+  const employee = new Employee("Jim", 20, "jim@mail.com");
   expect(employee.role).toBe("Employee");
 });
 
