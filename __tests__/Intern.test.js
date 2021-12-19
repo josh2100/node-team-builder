@@ -1,4 +1,3 @@
-// const Employee = require("../lib/Employee");
 const Intern = require("../lib/Intern");
 
 test("creates intern object", () => {
@@ -7,38 +6,38 @@ test("creates intern object", () => {
   expect(typeof intern).toBe("object");
 });
 
-test("creates intern object", () => {
-  const intern = new Intern("Bob");
+test("creates intern with intern role", () => {
+  const intern = new Intern("Jim");
 
-  expect(typeof intern).toBe("object");
+  expect(intern.role).toBe("Intern");
 });
 
-// test("creates intern with intern role", () => {
-//   const intern = new Intern("Jim");
+test("intern getRole() returns role", () => {
+  const intern = new Intern("Jim", 20, "jim@mail.com");
 
-//   expect(intern.role).toBe("intern");
-// });
+  expect(intern.getRole()).toBe("Intern");
+});
 
-// test("employee getRole() returns role", () => {
-//   const intern = new Intern("Jim", 20, "jim@mail.com");
+test("intern getName() returns name", () => {
+  const intern = new Intern("Jim", 20, "jim@mail.com");
 
-//   expect(intern.getRole()).toBe("intern");
-// });
+  expect(intern.getName()).toBe("Jim");
+});
 
-// test("intern getName() returns name", () => {
-//   const intern = new Intern("Jim", 20, "jim@mail.com");
+test("intern getId() returns id", () => {
+  const intern = new Intern("Jim", 20, "jim@mail.com");
 
-//   expect(intern.getName()).toBe("Jim");
-// });
+  expect(intern.getId()).toBe(20);
+});
 
-// test("intern getId() returns id", () => {
-//   const intern = new Intern("Jim", 20, "jim@mail.com");
+test("intern getEmail() returns email", () => {
+  const intern = new Intern("Jim", 20, "jim@mail.com");
 
-//   expect(intern.getId()).toBe(20);
-// });
+  expect(intern.getEmail()).toBe("jim@mail.com");
+});
 
-// test("intern getEmail() returns email", () => {
-//   const intern = new Intern("Jim", 20, "jim@mail.com");
+test("intern getSchool() returns school name", () => {
+  const intern = new Intern("Jim", 20, "jim@mail.com", "MIT");
 
-//   expect(intern.getEmail()).toBe("jim@mail.com");
-// });
+  expect(intern.getSchool()).toBe("MIT");
+});
