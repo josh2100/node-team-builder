@@ -44,19 +44,15 @@ const pageTemplate = (team) => {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- bootstrap stylesheet -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <!-- your stylesheet -->
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
     <title>Software Team Profile</title>
   </head>
   <body>
     <!-- Header -->
-    <header class="text-center bg-primary">
+    <header class="text-center bg-primary mb-5 py-2">
       <h1 class="">Software Team Profile</h1>
     </header>
 
