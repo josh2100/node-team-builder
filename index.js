@@ -82,7 +82,6 @@ const newManager = () => {
         responses.officeNumber
       );
       teamMembers.push(manager);
-      console.log(teamMembers);
       promptTeamMember();
     });
   // after asking questions, package up manager data as an employee
@@ -117,7 +116,6 @@ const promptTeamMember = () => {
 };
 
 const newEngineer = () => {
-  // console.log(teamMembers);
   return inquirer
     .prompt([
       {

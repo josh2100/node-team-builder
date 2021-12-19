@@ -1,12 +1,10 @@
-// const teamMembers = require("../index.js");
-
 // change to a function that takes array as argument!
 
 const pageTemplate = (team) => {
   let teamMembers = [];
   let teamHtml = [];
 
-  // Get the members except manager into teamMembers
+  // Get the members EXCEPT manager into teamMembers
   for (let i = 1; i < team.length; i++) {
     const element = team[i];
 
@@ -14,26 +12,24 @@ const pageTemplate = (team) => {
   }
 
   teamMembers.forEach((element) => {
-    // make if statement to change card based on intern or engineer
-
+    // Conditional to change card based on intern or engineer
     const engineerOrIntern = () => {
       if (element.role === "Engineer") {
-        return `Github: ${element.github}`; // line
+        return `Github: ${element.github}`;
       } else {
-        return `School: ${element.school}`; //return intern //line
+        return `School: ${element.school}`;
       }
     };
 
     teamHtml.push(`
-
-            <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+        <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3">
           <div class="card mx-auto mb-3">
             <h3 class="card-header">${element.name}</h3>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">${element.role}</li>
               <li class="list-group-item">ID:${element.id}</li>
-              <li class="list-group-item">
-                Email Address: ${element.email}
+              <li class="list-group-item">   
+                <a href="mailto:${element.email}">Email: ${element.email}</a>
               </li>
               <li class="list-group-item">${engineerOrIntern()}</li>
             </ul>
@@ -67,7 +63,7 @@ const pageTemplate = (team) => {
 
     <!-- Main -->
     <main class="container">
-      <section class="row">
+      <section class="row justify-content-center">
         <!-- Manager -->
         <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3">
           <div class="card mx-auto mb-3">
@@ -76,7 +72,7 @@ const pageTemplate = (team) => {
               <li class="list-group-item">${team[0].role}</li>
               <li class="list-group-item">ID: ${team[0].id}</li>
               <li class="list-group-item">
-                Email: ${team[0].email}
+                <a href="mailto:${team[0].email}">Email: ${team[0].email}</a>
               </li>
               <li class="list-group-item">Office number: ${
                 team[0].officeNumber
@@ -90,26 +86,8 @@ ${teamHtml.join("")}
       </section>
     </main>
   </body>
-</html>
-  
+</html> 
   `;
 };
-
-// header
-// manager
-`
-=====
-html is fun
-`;
-
-//
-// const generateTeamPage = (aboutText) => {
-//   return `html header`;
-// };
-
-// const generateTeamMembers = (projectsArr) => {
-//   // use forEach to make a section for each team member
-//   return `a`;
-// };
 
 module.exports = pageTemplate;
