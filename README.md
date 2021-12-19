@@ -1,8 +1,8 @@
 # Node Team Builder
 
-This Node.js command line application asks details about a software engineering team and generates a webpage for it. Clickable links are made for email addresses and GitHub portfolios
+This Node.js command line application asks details about a software engineering team and generates a webpage for it. Clickable links are made for email addresses and GitHub portfolios.
 
-Demo video at (link here)
+Demo video at https://drive.google.com/file/d/1TPTuSuj91-lyiYcMbPP0J34zOCoqPV0j/view?usp=sharing
 
 # Description
 
