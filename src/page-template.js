@@ -15,19 +15,18 @@ const pageTemplate = (team) => {
     // Conditional to change card based on intern or engineer
     const engineerOrIntern = () => {
       if (element.role === "Engineer") {
-        return `Github: ${element.github}`;
+        return `<a href="https://github.com/${element.github}">Github: ${element.github}</a>`;
       } else {
         return `School: ${element.school}`;
       }
     };
 
-    teamHtml.push(`
-        <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+    teamHtml.push(`<div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3">
           <div class="card mx-auto mb-3">
             <h3 class="card-header">${element.name}</h3>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">${element.role}</li>
-              <li class="list-group-item">ID:${element.id}</li>
+              <li class="list-group-item">ID: ${element.id}</li>
               <li class="list-group-item">   
                 <a href="mailto:${element.email}">Email: ${element.email}</a>
               </li>
