@@ -13,7 +13,7 @@ const pageTemplate = (team) => {
     // Conditional to change card based on intern or engineer
     const engineerOrIntern = () => {
       if (element.role === "Engineer") {
-        return `<a href="https://github.com/${element.github}">Github: ${element.github}</a>`;
+        return `<a href="https://github.com/${element.github}" target="blank">Github: ${element.github}</a>`;
       } else {
         return `School: ${element.school}`;
       }
