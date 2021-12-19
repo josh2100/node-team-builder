@@ -1,15 +1,16 @@
-// const generateTeamPage = require("./src/page-template"); deprecated??!
-const writeFile = require("./utils/generate-site");
-
 // Node modules
 const inquirer = require("inquirer");
 const jest = require("jest");
 
+const writeFile = require("./utils/generate-site");
+
+// Constructors
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const pageTemplate = require("./src/page-template");
 
+// Team member objects will be sent to this array
 let teamMembers = [];
 
 const newManager = () => {
@@ -252,4 +253,6 @@ const generatePage = () => {
   writeFile(pageTemplate(teamMembers));
 };
 
+// newManager() will call promptTeamMember() after responses, then newEngineer
+// or newIntern() will be called until they select finishPage()
 newManager();

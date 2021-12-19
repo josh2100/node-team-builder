@@ -6,7 +6,7 @@ Demo video at https://drive.google.com/file/d/1TPTuSuj91-lyiYcMbPP0J34zOCoqPV0j/
 
 # Description
 
-This is a node project in which a user can dynamically generate a software team HTML file from their command line interface. Inquirer is used to generate questions, and an HTML file is generated from the data provided. 
+This is a node project in which a user can dynamically generate a software team HTML file from their command line interface. Inquirer is used to generate questions, and an HTML file is generated from the data provided.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ Use npm install to install inquirer, jest, and associated modules, which are req
 
 ![Node Team Builder Screenshot](./images/screenshot.png)
 
-Run node index on your command line while in root directory. Answer all the questions, then check out the "dist" directory to see the final output. 
+Run node index on your command line while in root directory. Answer all the questions, then check out the "dist" directory to see the final output.
 
 ## License
 

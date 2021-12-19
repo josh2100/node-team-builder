@@ -1,5 +1,3 @@
-// change to a function that takes array as argument!
-
 const pageTemplate = (team) => {
   let teamMembers = [];
   let teamHtml = [];
