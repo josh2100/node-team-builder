@@ -24,7 +24,7 @@ Use npm install to install inquirer, jest, and associated modules, which are req
 
 ![Node Team Builder Screenshot](./images/screenshot.png)
 
-Run node index on your command line while in root directory. Answer all the questions, then check out the "dist" directory to see the final output.
+Run node index on your command line while in root directory. Answer all the questions, then check out the "dist" directory to see the final output. To test the Javascript methods, run npm test.
 
 ## License
 
@@ -42,7 +42,7 @@ This was built with Node.js, JavaScript, Inquirer.js, Jest, and Bootstrap.
 
 ## Credits
 
-Created by Joshua Schermann, special thanks to the University of Minnesota Coding Bootcamp
+Created by Joshua Schermann
 
 ## Questions
 
