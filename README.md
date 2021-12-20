@@ -1,12 +1,10 @@
 # Node Team Builder
 
-This Node.js command line application asks details about a software engineering team and generates a webpage for it. Clickable links are made for email addresses and GitHub portfolios.
+This is a node project in which a user can dynamically generate a software team HTML file from their command line interface. Inquirer is used to generate questions, and an HTML file is generated from the data provided. Clickable links are made for email addresses and GitHub portfolios.
 
 Demo video at https://drive.google.com/file/d/1TPTuSuj91-lyiYcMbPP0J34zOCoqPV0j/view?usp=sharing
 
-# Description
-
-This is a node project in which a user can dynamically generate a software team HTML file from their command line interface. Inquirer is used to generate questions, and an HTML file is generated from the data provided.
+![Node Team Builder Screenshot](./images/screenshot2.png)
 
 ## Table of Contents
 

@@ -20,7 +20,7 @@ const pageTemplate = (team) => {
     };
 
     teamHtml.push(`<div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mx-auto mb-3">
+          <div class="card mx-auto mb-3 shadow">
             <h3 class="card-header">${element.name}</h3>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">${element.role}</li>
@@ -59,7 +59,7 @@ const pageTemplate = (team) => {
       <section class="row justify-content-center">
         <!-- Manager -->
         <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-          <div class="card mx-auto mb-3">
+          <div class="card mx-auto mb-3 shadow">
             <h3 class="card-header">${team[0].name}</h3>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">${team[0].role}</li>
